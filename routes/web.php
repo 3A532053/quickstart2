@@ -17,3 +17,8 @@ Route::get('/', function () {
 
 // 認證路由...
 Route::auth();
+
+//新增home路徑
+Route::get('/home', function () {
+    return view('home.home');
+});
